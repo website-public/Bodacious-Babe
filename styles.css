@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Header */
+.header {
+    background: #fde8f0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff92a0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+    .contact-icon:hover {
+        color: #0077b5; /* LinkedIn color for LinkedIn icon hover */
+    }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #fde8f0;
+    padding: 50px 20px;
+}
+
+    .hero h2 {
+        font-size: 2em;
+        color: #ff92a0;
+    }
+
+.btn {
+    background: #ff92a0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+    .btn:hover {
+        background: #ff6d7e;
+    }
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.category {
+    background: #fde8f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+    .about p {
+        margin: 10px 0;
+    }
+
+/* Products Section */
+.services {
+    padding: 30px 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+    background: #fde8f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+    .product img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #ff92a0;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories, .product-list {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
